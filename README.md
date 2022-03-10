@@ -8,10 +8,12 @@ python creditcalc.py --type=diff --principal=1000000 --periods=10 --interest=10
 
 --type indicates the type of payment: "annuity" or "diff" (differentiated). If --type is specified neither as "annuity" nor as "diff" or not specified at all, show the error message.
 > python creditcalc.py --principal=1000000 --periods=60 --interest=10
+
 Incorrect parameters
 
 --payment is the monthly payment amount. For --type=diff, the payment is different each month, so we can't calculate months or principal, therefore a combination with --payment is invalid, too:
 > python creditcalc.py --type=diff --principal=1000000 --interest=10 --payment=100000
+
 Incorrect parameters
 
 --principal is used for calculations of both types of payment. You can get its value if you know the interest, annuity payment, and number of months.
@@ -20,6 +22,7 @@ Incorrect parameters
 
 These parameters are incorrect because --interest is missing:
 > python creditcalc.py --type=annuity --principal=100000 --payment=10400 --periods=8
+
 Incorrect parameters
 
 Examples:
